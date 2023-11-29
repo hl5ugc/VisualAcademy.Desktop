@@ -1,0 +1,24 @@
+﻿<Window x:Class="VisualAcademy.Desktop.Demos.FrmContextMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisualAcademy.Desktop.Demos"
+        mc:Ignorable="d"
+        Title="FrmContextMenu" Height="350" Width="525" FontSize="23">
+    
+    
+ 
+    <Grid>
+        <TextBox Width="200" Height="23" IsEnabled="false" ContextMenuService.ShowOnDisabled ="True">
+            <TextBox.ContextMenu>
+                <ContextMenu IsEnabled="true">
+                    <MenuItem Header="첫번째" x:Name ="miFisrt"  IsChecked="true" Click="miFisrt_Click"
+                              InputGestureText="Alt+Ctr+1"/>
+                    <MenuItem Header="두번째" x:Name ="miSecond" IsCheckable="true" />
+                    <MenuItem Header="세번째" x:Name ="miThird"  IsEnabled="False"/>
+                </ContextMenu>
+            </TextBox.ContextMenu>
+        </TextBox>
+    </Grid>
+</Window>
