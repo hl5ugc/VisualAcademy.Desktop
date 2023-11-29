@@ -6,9 +6,26 @@
         xmlns:local="clr-namespace:VisualAcademy.Desktop"
         mc:Ignorable="d"
         Title="MainWindow - VisualAcademy" Height="300" Width="800" FontSize="24" FontFamily="Arial" >
-    <StackPanel>
-        <Label>Instructor</Label>
-        <Calendar />
-        <Button Margin="0,10,0,9" Content="Click"/>
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.ColumnSpan="3" FontSize="20" Grid.Row="0">
+            <MenuItem Header="_File" >
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+        </Menu>
+        <StatusBar Grid.Row="3" Grid.ColumnSpan="3">
+            <StatusBarItem Content=" Copyright Samjin " />
+        </StatusBar>
+    </Grid>
 </Window>

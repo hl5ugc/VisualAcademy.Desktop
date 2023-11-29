@@ -1,0 +1,20 @@
+﻿<Window x:Class="VisualAcademy.Desktop.Rias.RiaBorder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisualAcademy.Desktop.Rias"
+        mc:Ignorable="d"
+        Title="RiaBorder" Height="300" Width="400">
+    <Grid x:Name="LayoutRoot" Background="White">
+         
+        <Border BorderBrush="Red" BorderThickness="5" CornerRadius="10" Padding="30" Margin="30">
+            <StackPanel>
+                <Ellipse Width="100" Height="100" Fill="Yellow" />
+                <Button Content="버튼" BorderThickness="5,3,5,3" BorderBrush="#FFE4EE23" >
+                </Button>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>
